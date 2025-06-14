@@ -1,0 +1,37 @@
+{
+  "canisters": {
+    "core_protocol_canister": {
+      "main": "src/core_protocol_canister/main.mo",
+      "type": "motoko"
+    },
+    "auction_governance_canister": {
+      "main": "src/auction_governance_canister/main.mo",
+      "type": "motoko"
+    },
+    "frontend": {
+      "dependencies": [
+        "core_protocol_canister",
+        "auction_governance_canister"
+      ],
+      "source": [
+        "src/frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "frontend"
+    }
+  },
+  "packages": {
+    "ic": {
+      "type": "local",
+      "path": "src/lib/ic"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

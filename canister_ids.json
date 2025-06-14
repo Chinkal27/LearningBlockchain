@@ -1,0 +1,11 @@
+{
+  "auction_governance_canister": {
+    "ic": "4leat-2iaaa-aaaaa-qalvq-cai"
+  },
+  "core_protocol_canister": {
+    "ic": "46dr6-3aaaa-aaaaa-qalwa-cai"
+  },
+  "frontend": {
+    "ic": "4zcxk-wyaaa-aaaaa-qalwq-cai"
+  }
+}

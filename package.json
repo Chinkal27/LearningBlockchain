@@ -1,0 +1,29 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "VaultVerse",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/frontend"
+  ],
+  "dependencies": {
+    "@dfinity/agent": "^2.4.1",
+    "@dfinity/auth-client": "^2.4.1",
+    "@dfinity/candid": "^2.4.1",
+    "@dfinity/identity": "^2.4.1",
+    "@dfinity/ledger-icp": "^2.6.13",
+    "@dfinity/principal": "^2.4.1",
+    "@dfinity/utils": "^2.13.0",
+    "@nfid/identitykit": "^1.0.13",
+    "react-router-dom": "^7.6.0"
+  }
+}
